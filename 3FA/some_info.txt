@@ -31,3 +31,43 @@ It must be your actual Gmail account (like youremail123@gmail.com), and it needs
 This is not your regular Gmail password.
 To use Gmail in a program (like your Python script), you need to create something called an App Password.
 It’s a special 16-character password that Google gives you to use with apps and scripts.
+
+//////// Enhancements for Multi-User 3FA System
+User Registration:
+Allow new users to create accounts with username, password, email, and image selection.
+
+Secure Password Storage:
+Hash passwords before storing using libraries like bcrypt.
+
+User Data Storage:
+Store user info (username, hashed password, email, chosen image) in a JSON file or database.
+
+Login System:
+Ask for username and password.
+Verify credentials against stored data.
+
+Image-Based Authentication:
+Show user’s chosen image during login for second factor verification.
+
+Email OTP Authentication:
+Send OTP to user’s registered email.
+Verify OTP with expiration and limited attempts.
+
+OTP Security Enhancements:
+Set OTP expiration (e.g., 5 minutes).
+Limit number of OTP input attempts.
+
+GUI Enhancements:
+Create registration, login, image selection, and OTP input screens using tkinter or similar.
+
+Password Reset Feature:
+Allow users to reset passwords via email OTP.
+
+User Profile Management:
+Enable users to update email, password, or authentication image.
+
+Admin Features:
+Add admin controls for managing users.
+
+Logging & Monitoring:
+Log login attempts and failures for security auditing./////////////
