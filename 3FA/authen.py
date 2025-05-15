@@ -104,7 +104,7 @@ def level2_gui():
     label = tk.Label(root, text="Select the correct image:")
     label.pack()
 
-    img_imag1 = load_image("images/img1.jpeg") #path to images
+    img_imag1 = load_image("images/img1.jpeg") #path to images can add upto many images
     img_imag2 = load_image("images/img2.jpeg")
     img_imag3 = load_image("images/img3.jpeg")
     img_imag4 = load_image("images/img4.jpeg")
