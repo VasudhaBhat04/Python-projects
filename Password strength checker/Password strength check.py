@@ -4,6 +4,7 @@
 
 import re
 
+
 def check_password_strength(password):
     strength = 0
     missing_criteria = []
