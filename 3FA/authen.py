@@ -134,7 +134,7 @@ def full_authentication():
         return
 
 
-    receiver_email = input("Enter your email: ") #Enter reciever email
+    receiver_email = input("Enter your email: ")  #Enter reciever email
     if not send_otp_email(receiver_email):
         print("Failed to send OTP. Check email setup.")
         return
