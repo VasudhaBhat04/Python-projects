@@ -1,0 +1,34 @@
+3 factor authentication system
+
+Registration Flow:
+Choose [1] Register
+
+Enter a username and password
+
+A QR code is generated and saved as username_qr.png
+
+Look at the camera — 20 face images are captured and stored in faces/username
+
+Face recognizer is trained and saved
+
+Registration successful
+
+Login Flow:
+Choose [2] Login
+
+Enter the same username & password
+
+Hold your saved QR code image in front of the webcam
+
+QR is verified
+
+Face is verified via webcam
+
+If all 3 match → "Authentication successful!"
+
+Client connects to server → server replies!
+
+Exit:
+Choose [3] Exit to quit.
+
+run server.py ---> run client.py
