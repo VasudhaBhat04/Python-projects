@@ -1,0 +1,73 @@
+3-Level Multi-Factor Authentication System 
+
+Level 1: Password Authentication
+The user is prompted to enter a password via the console.
+They are allowed up to 3 attempts to enter the correct password.
+If the password matches the hardcoded value ("Your_password"), the program proceeds to level 2.
+If all attempts are wrong, authentication fails.
+
+
+Level 2: Image-Based Authentication
+A Tkinter GUI window opens with 4 image options.
+The user must click the correct image (img2.jpeg by default) to pass.
+If the correct image is selected:
+A success message is shown.
+The GUI is closed and the program moves to the next level.
+If the wrong image is selected, an error popup appears.
+
+
+Level 3: OTP Authentication via Email
+The user enters their email address in the terminal.
+A 6-digit OTP is generated and sent using SMTP with Gmail (smtplib and email libraries).
+The program retries sending the OTP up to 3 times if any error occurs.
+The user must enter the OTP correctly to complete authentication.
+
+
+Sender Gmail
+This is the Gmail address that will be used to send the OTP email.
+It must be your actual Gmail account (like youremail123@gmail.com), and it needs to have permission to send emails via code (SMTP).
+
+"An app password" – Gmail App Password
+This is not your regular Gmail password.
+To use Gmail in a program (like your Python script), you need to create something called an App Password.
+It’s a special 16-character password that Google gives you to use with apps and scripts.
+
+//////// Enhancements for Multi-User 3FA System
+User Registration:
+Allow new users to create accounts with username, password, email, and image selection.
+
+Secure Password Storage:
+Hash passwords before storing using libraries like bcrypt.
+
+User Data Storage:
+Store user info (username, hashed password, email, chosen image) in a JSON file or database.
+
+Login System:
+Ask for username and password.
+Verify credentials against stored data.
+
+Image-Based Authentication:
+Show user’s chosen image during login for second factor verification.
+
+Email OTP Authentication:
+Send OTP to user’s registered email.
+Verify OTP with expiration and limited attempts.
+
+OTP Security Enhancements:
+Set OTP expiration (e.g., 5 minutes).
+Limit number of OTP input attempts.
+
+GUI Enhancements:
+Create registration, login, image selection, and OTP input screens using tkinter or similar.
+
+Password Reset Feature:
+Allow users to reset passwords via email OTP.
+
+User Profile Management:
+Enable users to update email, password, or authentication image.
+
+Admin Features:
+Add admin controls for managing users.
+
+Logging & Monitoring:
+Log login attempts and failures for security auditing./////////////
