@@ -24,8 +24,8 @@ import socket
 def connect_to_server():
     try:
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        server_ip = '10.24.125.214'  # Same as the server's IP
-        server_port = 5050
+        server_ip = 'server IP address'  # Same as the server's IP
+        server_port = 5000
         client_socket.connect((server_ip, server_port))  # Connect to the server
         print("Connected to the server!")
         message = client_socket.recv(1024).decode()
