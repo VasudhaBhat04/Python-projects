@@ -1,6 +1,6 @@
 import imageio.v3 as iio
 
-filenames = ['duck1.jpeg', 'duck2.jpeg']
+filenames = ['duck1.jpeg', 'duck2.jpeg'] #same size images are expected
 images = [ ]
 
 for filename in filenames:
