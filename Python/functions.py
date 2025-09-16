@@ -57,3 +57,65 @@ def addressof(**addr):
     for v in addr.keys():
         print(v)            #prints only keys
 addressof(street="102H",city="pae",state="zk",zip="123")
+
+def hello(*args, **kwargs):
+    for arg in args: #if you dont want it to dispaly as a list but indivial no.s
+        print(arg, end=" ") #end="" prints in single line
+    print()
+    print(kwargs)
+
+hello(1,23,4,2,6,color="pink",flower="lotus")
+
+#Iterables An object or collection  taht acn return its elements one at a time,allowing it to be iterated over a loop.
+#tuples, lists, sets, string, dict
+#list iterable
+x=[1,2,3,4,5]
+for n in x:
+    print(n,end=" - ")
+print()
+    
+for i in reversed(x): #reversed() 
+    print(i,end="-")
+print()
+
+#tuples iterable
+xp=(1,2,3,4,5)
+for ip in reversed(xp): #reversed() 
+    print(ip,end=" ")
+print()
+
+#set iterable
+set={"Hello","Good","Morning"}
+for word in set: # U can't reverse a set 
+    print(word,end=" <3 ")
+print()
+
+#String iterable
+str="Stranger Things"
+for c in str:
+    print(c,end="*")
+
+print()
+#Dictionary iterable
+dict= {"a":"avacado","b":"bhindi","c":"cherry_tomatoes"}
+for key in dict.keys():
+    print(key,end=" ")
+print()
+for val in dict.values():
+    print(val,end=",")
+
+#Memership operators :test whether value/ variable found in sequence
+#in or  not in
+#tuples, lists, sets, string, dict
+
+
+string = "Classmate notebooks are awesome" #rem:case sensitive
+x=input("Enter the word: ")
+
+if x in string:
+    print(f'{x} found')
+elif x not in string:
+     print(f'{x} not found')
+
+
+
