@@ -92,5 +92,66 @@ print(f"Hello {name}") #f string is needed when you need to print the variables 
 print(name) # no need of f string
 xa = input() #user input
 print(xa)
- 
- #Pthon doesn't have array use lists[] instead
+
+#2D lists
+fruits=      ["cherry","oranges","apples","pineapple","mango"] 
+vegetables=  ["carrot","tomato","beans","peas","potato"]
+flowers=     ["lotus","rose","jasmine","lily","hydrangea"]
+
+groceries=[fruits,vegetables,flowers]
+
+print(groceries[2]) # flowers list will be printed
+print(groceries[0][1]) #oranges
+print(len(groceries))
+
+for collection in groceries:
+  for food in collection:
+   print(food,end=" ")
+  print()
+
+ #2D tuples or 2D sets are possible to
+num_pad =((1,2,3),
+          (4,5,6),(7,8,9),
+          ("*",0,"#"))
+for row in num_pad:
+   for num in row:
+      print(num, end=" ")
+   print()
+
+#Match case statements / alternative for switch / many if-else statements can be replaced
+
+def day_of_weeks(day):
+   match day:
+      case 1:
+         return "It is Monday"
+      case 2:
+         return "It is Tuesday"
+      case 3:
+         return "It is Wednesday"
+      case 4:
+         return "It is Thursday"
+      case 5:
+         return "It is Friday"
+      case 6:
+         return "It is Saturday"
+      case 7:
+         return "It is Sunday"
+      case _:                     #default case
+         return "Not valid"
+    
+x = int(input("Enter the day: "))
+print(day_of_weeks(x))
+         
+
+
+
+
+
+
+
+
+
+
+
+
+ #Python doesn't have array use lists[] instead

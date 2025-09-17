@@ -117,5 +117,29 @@ if x in string:
 elif x not in string:
      print(f'{x} not found')
 
+# list compressions (for-each loop)a concise way to create lists in Python
+#[expression for value in iteratble if condition]
+doubles = []
+for x in range(1,11):
+    doubles.append(x*x)
+print(doubles)
+
+#or
+
+doublesa =[x*x for x in range(1,11)]#[expression for value in iteratble if condition]
+print(doublesa)
+
+triples=[z*3 for z in range(1,11)]
+print(triples)
+
+numbe =[1, -2, -3, 4, -5]
+pos=[num for num in numbe if num>=0]
+neg=[num for num in numbe if num<0] #for every num in numbe check if the num is positive if so return the num
+print(neg)
+print(pos)
+
+
+
+
 
 
