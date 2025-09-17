@@ -2,8 +2,9 @@
 # use 'import' to include a module (build-in or your own)
 # useful to break up a large program reusable sepearte files.
 
-#print(help("modules")) # list of all module available in python
-#print(help("math")) #lists all the variables & functions in particular module
+print(help("modules")) # list of all module available in python
+
+print(help("math")) #lists all the variables & functions in particular module
 
 import math
 print(math.pi)

@@ -139,7 +139,7 @@ def day_of_weeks(day):
       case _:                     #default case
          return "Not valid"
     
-x = int(input("Enter the day: "))
+x = int(input("Enter the day: ")) 
 print(day_of_weeks(x))
          
 

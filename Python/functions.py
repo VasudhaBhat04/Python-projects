@@ -138,6 +138,16 @@ neg=[num for num in numbe if num<0] #for every num in numbe check if the num is 
 print(neg)
 print(pos)
 
+#if __name__ == '__main__' :(this script can be imported or run standalone)run this block ONLY when I run the file directly, not when someone imports me."
+#                          Functions & classes in this module can be reused without the main block of code executing
+def main():
+    #Program code here
+    pass
+
+
+if __name__ == '__basic__' :  #(basic.py) if not  __name__ == '__main__'
+    main()                        
+
 
 
 
