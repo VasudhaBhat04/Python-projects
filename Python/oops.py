@@ -83,3 +83,72 @@ dog.eat()
 cow.sleep()
 cow.speak()
 
+# Multiple Inheritance = inherit from more than 1 parent class
+#                        C(A,B)
+
+# Multilevel Inheritance = inherit from a parent which inherits from another parent
+#                          C(B) <- B(A) <- A
+# MULTIPLE 
+class Prey:
+    def flee(self):
+        print("This animal is genius & fleed")
+
+class Predator:
+    def hunt(self):
+        print("This animal is hunting for food")
+
+class Rabbit(Prey):
+    pass
+
+class Hawk(Predator):
+    pass
+
+class Fish(Prey,Predator): #Inherit from more than 1 class
+    pass
+
+rabbit = Rabbit()
+hawk = Hawk()
+fish = Fish()
+
+rabbit.flee()
+hawk.hunt()
+fish.flee()
+fish.hunt()
+
+# MULTI-LEVEL
+class Animal: # Grandparent class
+
+    def __init__(self, name):
+        self.name = name
+
+    def eat(self):
+        print(f"{self.name} is eating")
+
+    def sleep(self):
+        print(f"{self.name} is sleeping")
+
+class Prey(Animal): #Parent class
+    def flee(self):
+        print(f"{self.name} is genius & fleed")
+
+class Predator(Animal): #Parent class
+    def hunt(self):
+        print(f"{self.name} is hunting for food")
+
+class Rabbit(Prey): # Child class
+    pass
+
+class Hawk(Predator): # Child class
+    pass
+
+class Fish(Prey,Predator): #Inherit from more than 1 class # Child class
+    pass
+
+rabbit = Rabbit("Jimmy")
+hawk = Hawk("Abel")
+fish = Fish("Dory")
+
+rabbit.eat()
+hawk.sleep()
+fish.eat()
+fish.hunt()
