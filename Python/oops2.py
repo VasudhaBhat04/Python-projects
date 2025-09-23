@@ -16,7 +16,7 @@ class Circle(Shapes):
 
     def describe(self):     # Method overriding:if parent & child both shares same method name then child's method is considered
         print(f"Area is {self.radius*self.radius*3.14} cm.sq")
-        super().describe()  # If u still need describe method of parent class
+        super().describe()  # If u still need describe method of parent class use super class
 
 class Sqaure(Shapes):
     def __init__(self,color,is_filled,width):
@@ -47,3 +47,70 @@ print(tri.height)
 circ.describe()
 sq.describe()
 tri.describe()
+
+# Polymorphism
+# 2 ways to achieve Inheritance & Ducktyping
+from abc import ABC, abstractmethod  
+
+class Shape:
+     
+    @abstractmethod 
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self,radius):
+        self.radius = radius
+    
+    def area(self):
+        return 3.14*self.radius ** 2
+
+class Square(Shape):
+    def __init__(self,side):
+        self.side = side
+
+    def area(self):
+        return self.side ** 2
+
+class Triangle(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    def area(self):
+        return self.base * self.height * 0.5
+    
+class Pizza(Circle):
+    def __init__(self, topping, radius):
+        super().__init__(radius)
+        self.topping = topping
+        
+shapes=[Circle(4), Square(5), Triangle(3,6),Pizza("Black-Olives",15)]
+
+for shape in shapes:
+    print(shape.area())
+
+# Duck Typing = Objects must have the min. necessary attributes/ methods
+#              "If it looks like a duck & quacks like a duck it must be duck"
+
+class Animal:
+    alive = True
+
+class Dog(Animal):
+    def speak(self):
+        print("Bark!")
+
+class Cat(Animal):
+    def speak(self):
+        print("Meow!")
+
+class Car:
+
+    alive = False
+    def speak(self):
+        print("Honk!")
+
+animals = [Dog(),Cat(),Car()]
+for a in animals:
+    a.speak()
+    print(a.alive)
