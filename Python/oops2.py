@@ -114,3 +114,4 @@ animals = [Dog(),Cat(),Car()]
 for a in animals:
     a.speak()
     print(a.alive)
+
