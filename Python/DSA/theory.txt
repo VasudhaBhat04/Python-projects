@@ -7,7 +7,7 @@ Complete in finite amount of time.
 Efficiency of an algorithm refers to how well an algorithm uses time and memory (space) resources to solve a problem.
 It helps us compare multiple algorithms that solve the same task and choose the one that performs best under given constraints.
 
-Two Key Aspects
+Two Key Aspects:
 
 Time Efficiency (Time Complexity)
 → Measures how much time an algorithm takes to run as the input size increases.

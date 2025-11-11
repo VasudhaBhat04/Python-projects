@@ -15,3 +15,14 @@ a = [4,3,7,91,23,56,990,12,1004,121]
 
 r = bubble_sort(a)
 sort(r)
+
+"""
+Time Complexity:
+
+Best: O(n) (already sorted)
+
+Worst: O(n²)
+
+Space: O(1)
+
+"""
