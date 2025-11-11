@@ -1,0 +1,59 @@
+Algorithm - set of steps/ instructions for computing a task
+Clearly defined problem statement, input & output
+Steps - very specific order, distinct
+Produce a result
+Complete in finite amount of time.
+
+Efficiency of an algorithm refers to how well an algorithm uses time and memory (space) resources to solve a problem.
+It helps us compare multiple algorithms that solve the same task and choose the one that performs best under given constraints.
+
+Two Key Aspects
+
+Time Efficiency (Time Complexity)
+→ Measures how much time an algorithm takes to run as the input size increases.
+→ This checks how fast the algorithm runs.
+→ If your input (like number of elements) grows, how much extra time will it need?
+
+Space Efficiency (Space Complexity)
+→ Measures how much extra memory (apart from input) the algorithm needs.
+→ This checks how much memory (RAM) the algorithm uses while running.
+→ ome algorithms need extra space to store temporary data — others use less.
+
+Why efficiency matters?
+
+→ Helps in designing scalable programs that handle large data efficiently.
+→ Determines if an algorithm is practically usable within time or memory limits.
+→ Useful in system optimization, embedded systems, and high-performance computing.
+
+| Notation    | Name          | Meaning       | What It Tells You                                                            | Example                        |
+| ----------- | ------------- | ------------- | ---------------------------------------------------------------------------- | ------------------------------ |
+| **O(f(n))** | **Big O**     | *Upper Bound* | The **worst-case** time — the algorithm will never take longer than this.    | Sorting worst case = O(n²)     |
+| **Ω(f(n))** | **Big Omega** | *Lower Bound* | The **best-case** time — the algorithm will take at least this much time.    | Sorting best case = Ω(n log n) |
+| **Θ(f(n))** | **Big Theta** | *Tight Bound* | The **average or exact** growth rate — both upper and lower bounds are same. | If O(n) and Ω(n) → Θ(n)        |
+
+Suppose we have Linear Search in a list of n numbers.
+
+Best case (Ω) → The element is found at the start → Ω(1) Minimum time taken
+
+Worst case (O) → The element is at the end → O(n) Maximum time taken
+
+Average case (Θ) → Element somewhere in middle → Θ(n/2) ≈ Θ(n)
+
+Why Big O Is Used Most Often??
+Big O tells us how slow an algorithm can possibly get — its upper limit.
+It tells us the maximum time our program can take.
+It guarantees performance even when things go wrong
+We must ensure the program runs within acceptable time even in worst conditions.
+
+Data structures - is a way of organizing and storing data so that it can be used efficiently.
+
+Linear Data Structures → elements arranged sequentially (one after another).
+Examples: Array, Linked List, Stack, Queue
+
+Non-Linear Data Structures → elements arranged hierarchically or interconnected.
+Examples: Tree, Graph, Heap
+
+
+
+
+
