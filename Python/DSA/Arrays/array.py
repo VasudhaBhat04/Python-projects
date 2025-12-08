@@ -20,3 +20,4 @@ Python doesn’t have a true static array like C or Java — instead, it uses li
 | **Traversal** | Visit all elements    | **O(n)**                           |
 
 """
+
