@@ -66,7 +66,7 @@ def hello(*args, **kwargs):
 
 hello(1,23,4,2,6,color="pink",flower="lotus")
 
-#Iterables An object or collection  taht acn return its elements one at a time,allowing it to be iterated over a loop.
+#Iterables An object or collection  that can return its elements one at a time,allowing it to be iterated over a loop.
 #tuples, lists, sets, string, dict
 #list iterable
 x=[1,2,3,4,5]
